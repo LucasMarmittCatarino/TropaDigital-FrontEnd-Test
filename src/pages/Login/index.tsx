@@ -5,7 +5,7 @@ import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 import LoginImage from '../../assets/login-illustration.png';
 import './styles.css';
 
-function LoginPage() {
+function Login() {
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate();
 
@@ -78,4 +78,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default Login;
