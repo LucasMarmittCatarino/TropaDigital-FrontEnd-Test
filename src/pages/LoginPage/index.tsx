@@ -1,8 +1,12 @@
+import { useState } from "react";
 import Logo from '../../assets/logo.png';
+import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 import LoginImage from '../../assets/login-illustration.png';
 import './styles.css';
 
 function LoginPage() {
+    const [showPassword, setShowPassword] = useState(false);
+
   return (
     <div className="min-h-screen w-full flex justify-center items-center bg-[#F9FBFF]">
       <div className="flex items-center relative w-[756px] h-[498px] bg-white p-[10px] rounded-[20px] shadow-2xl">
@@ -24,13 +28,31 @@ function LoginPage() {
                 </div>
 
                 <div className="flex flex-col">
-                <label htmlFor="password" className="label-default">Senha</label>
-                <input
-                    type="password"
-                    id="password"
-                    className="input-default"
-                    placeholder="Digite aqui"
-                />
+                    <label htmlFor="password" className="label-default">
+                        Senha
+                    </label>
+
+                    <div className="relative">
+                        <input
+                        type={showPassword ? "text" : "password"}
+                        id="password"
+                        placeholder="Digite aqui"
+                        className="input-default pr-10"
+                        />
+                        {showPassword ? (
+                        <MdOutlineVisibilityOff
+                            size={27}
+                            className="absolute right-[20px] top-1/2 transform -translate-y-1/2 text-[#CC6237] cursor-pointer"
+                            onClick={() => setShowPassword(false)}
+                        />
+                        ) : (
+                        <MdOutlineVisibility
+                            size={27}
+                            className="absolute right-[20px] top-1/2 transform -translate-y-1/2 text-[#CC6237] cursor-pointer"
+                            onClick={() => setShowPassword(true)}
+                        />
+                        )}
+                    </div>
                 </div>
 
                 <button type="submit" className="w-[299px] h-[40px] bg-[#CC6237] rounded-[100px]">
