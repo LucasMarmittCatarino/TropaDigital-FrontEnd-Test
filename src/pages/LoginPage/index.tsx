@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Logo from '../../assets/logo.png';
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 import LoginImage from '../../assets/login-illustration.png';
@@ -6,6 +7,13 @@ import './styles.css';
 
 function LoginPage() {
     const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate();
+
+    const handleLogin = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        navigate("/dashboard");
+    };
 
   return (
     <div className="min-h-screen w-full flex justify-center items-center bg-[#F9FBFF]">
@@ -16,7 +24,7 @@ function LoginPage() {
             <h1 className="font-bold text-[26px] text-[#CC6237] leading-[15px] tracking-[0]">Bem-vindo de volta</h1>
             <p className="text-[13px] font-normal text-[#2A4D8E80]">Entre com sua conta para acessar o painel.</p>
 
-            <form className="w-full max-w-md flex flex-col gap-[20px] mt-[35px]">
+            <form onSubmit={handleLogin} className="w-full max-w-md flex flex-col gap-[20px] mt-[35px]">
                 <div className="flex flex-col">
                 <label htmlFor="email" className="label-default">E-mail</label>
                 <input
@@ -55,7 +63,7 @@ function LoginPage() {
                     </div>
                 </div>
 
-                <button type="submit" className="w-[299px] h-[40px] bg-[#CC6237] rounded-[100px]">
+                <button type="submit" className="w-[299px] h-[40px] bg-[#CC6237] rounded-[100px] cursor-pointer hover:bg-[#b4542e] transition-colors duration-300">
                 <p className='text-white font-medium text-[13px]'>Enviar</p>
                 </button>
             </form>
