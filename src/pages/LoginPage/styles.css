@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.input-default {
+  @apply w-[299px] h-[40px] rounded-[100px] pl-[20px] bg-[#F6F6F6] placeholder:text-[#657593] placeholder:text-[12px] placeholder:font-normal border border-transparent focus:border-[#E0E0E0] focus:outline-none;
+}
+
+.label-default {
+    @apply text-[13px] text-[#CC6237] font-semibold mb-[5px];
+}
