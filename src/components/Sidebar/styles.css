@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.default-navbar {
+    @apply flex w-[180px] h-[35px] items-center text-[#252525] mb-[7px] rounded-[5px] p-[10px]
+}
+
+.checked-navbar {
+    @apply bg-[#CC6237] text-white
+}
+
+.default-navbar:hover:not(.checked-navbar) {
+  @apply bg-[#f3f4f6];
+}
+
+.default-navbar-label {
+    @apply text-[14px] font-medium ml-[10px]
+}

@@ -5,6 +5,7 @@ import MainLayout from '../layout/MainLayout';
 import Events from '../pages/Events';
 import Teams from '../pages/Teams';
 import Registration from '../pages/Registrations';
+import UpdateProfile from '../pages/UpdateProfile';
 
 export function AppRoutes() {
   return (
@@ -16,6 +17,7 @@ export function AppRoutes() {
         <Route path="Events" element={<Events />} />
         <Route path="Teams" element={<Teams />} />
         <Route path="Registration" element={<Registration />} />
+        <Route path="UpdateProfile" element={<UpdateProfile />} />
       </Route>
     </Routes>
   );
