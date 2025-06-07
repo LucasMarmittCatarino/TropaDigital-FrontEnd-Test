@@ -1,13 +1,21 @@
 @import "tailwindcss";
 
+.flex-container {
+  @apply flex justify-center items-center w-full
+}
+
+.flex-column {
+  @apply flex flex-col;
+}
+
 .label-default {
-    @apply text-[13px] text-[#CC6237] font-semibold mb-[5px];
+  @apply text-[13px] text-[var(--main-orange)] font-semibold mb-[5px];
 }
 
 .input-default {
-  @apply w-full h-[40px] rounded-[100px] pl-[20px] bg-[#F6F6F6] text-[#657593] text-[13px] placeholder:text-[12px] border border-transparent focus:border-[#E0E0E0] focus:outline-none;
+  @apply w-full max-h-[40px] rounded-[100px] p-[20px] bg-[var(--input)] text-[var(--input-text)] text-[13px] placeholder:text-[12px] border border-transparent focus:border-[var(--input-dark)] focus:outline-none;
 }
 
 .icon {
-   @apply absolute right-[20px] top-1/2 transform -translate-y-1/2 text-[#CC6237] cursor-pointer select-none;
+  @apply absolute right-[20px] top-1/2 transform -translate-y-1/2 text-[var(--main-orange)] cursor-pointer select-none;
 }
