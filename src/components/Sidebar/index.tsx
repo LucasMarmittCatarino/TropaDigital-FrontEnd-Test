@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { MdEvent } from "react-icons/md";
+import { LuCalendarDays } from "react-icons/lu";
 import { HiOutlineUserGroup } from "react-icons/hi2";
 import { RiGroupLine } from "react-icons/ri";
 import { RxDashboard } from "react-icons/rx";
@@ -32,7 +32,7 @@ function Sidebar() {
           to="/Events"
           className={({ isActive }) => getNavbarClass(isActive)}
         >
-          <MdEvent size={15}/>
+          <LuCalendarDays size={15}/>
           <p className="default-navbar-label">Eventos</p>
         </NavLink>
 
