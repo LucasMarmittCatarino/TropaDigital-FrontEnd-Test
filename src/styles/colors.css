@@ -1,0 +1,23 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --background: #F9FBFF;
+    --main-orange: #CC6237;
+    --main-orange-dark: #b4542e;
+    --grey-1: #2A4D8E80;
+    
+    --black-10:  #0000001a;
+    --black-20:  #00000033;
+    --black-30:  #0000004d;
+    --black-40:  #00000066;
+    --black-50:  #00000080;
+    --black-60:  #00000099;
+    --black-70:  #000000b3;
+    --black-80:  #000000cc;
+    --black-90:  #000000e6;
+
+    --input: #F6F6F6;
+    --input-dark: #E0E0E0;
+    --input-text: #657593;
+}
