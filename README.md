@@ -20,5 +20,41 @@ git clone https://github.com/seu-usuario/nome-do-repo.git
 cd nome-do-repo
 npm install
 npm run dev
+```
 
 ## 🗂️ Estrutura de Pastas
+
+src/
+├── assets/       # Imagens e arquivos estáticos
+├── components/   # Componentes reutilizáveis
+├── layout/       # Layouts principais da aplicação
+├── mocks/        # Dados simulados (mockados) para testes ou protótipos
+├── pages/        # Páginas da aplicação
+├── routes/       # Definições de rotas da aplicação
+├── styles/       # Estilos globais, configurações do Tailwind
+├── App.tsx       # Componente principal
+└── main.tsx      # Ponto de entrada da aplicação com Vite
+
+✅ Funcionalidades
+ Configuração do projeto com Vite e Tailwind v4
+
+ Componentes reutilizáveis e tipados
+
+ Layout responsivo
+
+ Sistema de rotas com React Router
+
+ Utilização de dados mockados (para simular uma API)
+
+ Organização de páginas e layout base
+
+🧠 Conceitos Demonstrados
+React com Vite (ambiente rápido e moderno)
+
+Tailwind CSS v4 com classes utilitárias avançadas
+
+Arquitetura limpa e organizada
+
+Separação de responsabilidades por pastas
+
+Uso de useState, useEffect, props tipadas e boas práticas de código
