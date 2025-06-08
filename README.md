@@ -2,7 +2,7 @@
 
 Este projeto foi desenvolvido como parte de um teste técnico, com o objetivo de demonstrar habilidades práticas utilizando as últimas versões do React com Vite, Tailwind CSS v4 e TypeScript.
 
-🔗 **Deploy:** [Clique aqui para visualizar]([https://seu-projeto.vercel.app](https://tropa-digital-front-end-test.vercel.app/))
+🔗 **Deploy:** [Clique aqui para visualizar]([https://seu-projeto.vercel.app](https://tropa-digital-front-end-test.vercel.app/)
 
 ## 🌐 Compatibilidade
 
