@@ -13,7 +13,7 @@
 }
 
 .input-default {
-  @apply w-full max-h-[40px] rounded-[100px] p-[20px] bg-[var(--input)] text-[var(--input-text)] text-[13px] placeholder:text-[12px] border border-transparent focus:border-[var(--input-dark)] focus:outline-none;
+  @apply w-full max-h-[40px] rounded-[100px] p-[20px] bg-[var(--input)] text-[var(--text-grey)] text-[13px] placeholder:text-[12px] border border-transparent focus:border-[var(--input-dark)] focus:outline-none;
 }
 
 .icon {

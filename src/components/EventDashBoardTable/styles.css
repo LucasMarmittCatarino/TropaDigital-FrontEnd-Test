@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.table-container {
+    @apply w-full h-[38px]
+}
+
+.table-label {
+    @apply font-medium text-[13px] text-[var(--main-orange-50)]
+}
+
+.card-border {
+    @apply border border-[#CC62371A] rounded-[10px]
+}
+
+.table-data {
+    @apply font-normal text-[12px] text-[var(--text-grey)]
+}

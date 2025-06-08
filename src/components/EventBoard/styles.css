@@ -1,13 +1,1 @@
 @import "tailwindcss";
-
-.table-container {
-    @apply w-[25%] h-[38px]
-}
-
-.table-label {
-    @apply font-medium text-[13px] text-[#CC623780]
-}
-
-.table-data {
-    @apply font-normal text-[12px] text-[#657593]
-}
