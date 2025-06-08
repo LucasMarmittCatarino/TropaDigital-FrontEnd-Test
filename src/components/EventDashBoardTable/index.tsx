@@ -16,7 +16,6 @@ type Props = {
 export const EventDashboardTable = ({ dashboard_data }: Props) => {
   return (
     <>
-      {/* Desktop view */}
       <div className="max-[815px]:hidden">
         <table className="w-full text-left table-fixed border-separate border-spacing-x-[20px]">
           <thead>
@@ -57,7 +56,6 @@ export const EventDashboardTable = ({ dashboard_data }: Props) => {
         </table>
       </div>
 
-      {/* Mobile view */}
       <div className="min-[815px]:hidden space-y-[15px]">
         {dashboard_data.map(({ id, name, teams, status, date }) => (
           <div key={id} className="flex flex-col card-border p-[20px]">

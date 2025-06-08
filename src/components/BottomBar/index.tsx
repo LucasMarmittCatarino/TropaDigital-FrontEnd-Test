@@ -4,7 +4,7 @@ import { LuCalendarDays } from "react-icons/lu";
 import { HiOutlineUserGroup } from "react-icons/hi2";
 import { RiGroupLine } from "react-icons/ri";
 import { IoPersonOutline } from "react-icons/io5";
-import { FaPowerOff } from "react-icons/fa6";
+import { IoIosPower } from "react-icons/io";
 
 function BottomBar() {
   const navItemClass = ({ isActive }: { isActive: boolean }) =>
@@ -14,7 +14,6 @@ function BottomBar() {
 
   return (
     <nav className="fixed bottom-0 left-0 w-full h-[60px] bg-white border-t border-black/10 flex items-center justify-between px-4 z-50">
-      {/* Grupo 1 - Ícones principais com espaçamento total */}
       <div className="flex flex-1 justify-between">
         <NavLink to="/Dashboard" className={navItemClass}>
           <RxDashboard size={22} />
@@ -30,17 +29,13 @@ function BottomBar() {
         </NavLink>
       </div>
 
-      {/* Grupo 2 - Linha + ícones de usuário */}
       <div className="flex items-center ml-[10px]">
-        {/* Linha separadora */}
         <div className="w-[1px] h-[34px] bg-black/10 mr-[10px]" />
-
-        {/* Botões do usuário */}
         <NavLink to="/UpdateProfile" className={navItemClass}>
           <IoPersonOutline size={22} />
         </NavLink>
         <NavLink to="/" className={navItemClass}>
-          <FaPowerOff size={22} />
+          <IoIosPower size={26} />
         </NavLink>
       </div>
     </nav>
