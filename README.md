@@ -2,6 +2,12 @@
 
 Este projeto foi desenvolvido como parte de um teste técnico, com o objetivo de demonstrar habilidades práticas utilizando as últimas versões do React com Vite, Tailwind CSS v4 e TypeScript.
 
+🔗 **Deploy:** [Clique aqui para visualizar]([https://seu-projeto.vercel.app](https://tropa-digital-front-end-test.vercel.app/))
+
+## 🌐 Compatibilidade
+
+Este aplicativo é responsivo e possui compatibilidade tanto para **web** quanto para **dispositivos móveis**, garantindo uma experiência fluida em diferentes tamanhos de tela.
+
 ## ⚙️ Tecnologias Utilizadas
 
 - [React 19+](https://reactjs.org/)
